@@ -5,10 +5,10 @@
   "main": "server.js",
   "scripts": {
     "start:dev": "concurrently \"npm run client\" \"npm run server\"",
-    "start": "node server.js",
-    "server": "nodemon server.js",
+    "start": "node ./server/server.js",
+    "server": "nodemon ./server/server.js",
     "build": "webpack --mode production",
-    "install": "node server.js",
+    "install": "node ./server/server.js",
     "client": "webpack-dev-server --mode development --open"
   },
   "keywords": [],
