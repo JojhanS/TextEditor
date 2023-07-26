@@ -16,7 +16,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './client/src/index.html',
+      template: './client/index.html',
       filename: 'index.html',
       chunks: ['main'],
     }),
@@ -45,7 +45,7 @@ module.exports = {
       ],
     }),
     new InjectManifest({
-      swSrc: './client/src/src-sw.js',
+      swSrc: './client/src-sw.js',
       swDest: 'service-worker.js',
     }),
   ],
